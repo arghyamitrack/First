@@ -1,0 +1,89 @@
+CITY FINANCE (Australlian finance company - give small amount consumer loans)
+proviso,credit sense - credit pull
+equifax credit pull - bank statement pull 
+veda check - id verification
+nintex docgen - document generation
+
+
+https://cfdevorgll-cityfinance.cs75.force.com/consumer
+standard bank
+cs.testa1
+cs.testa1 is both the username and password
+
+
+PROMPT FINANCE (Ontario(canada) based company - connects brokers with homeowners - homeowners get loan - brokers get commission)
+conga composer - document generation
+TransUnion - credit pull
+
+admin.prod@promptfinancial.ca.prompt
+PromptSand2020@
+
+
+
+Create A loan - done
+Disburse a loan - done
+Generate Bills
+Collect fee payment
+Rescedulling of loans
+
+
+
+Loan_Amount__c
+genesis__Term__c
+genesis__Payment_Amount__c
+Administrative_Fee__c
+genesis__Balloon_Payment__c
+new_Lending_Fees__c
+Partial_Month_Interest__c
+
+
+
+
+(
+
+(
+
+( ( genesis__Term__c - 1 ) * ( genesis__Payment_Amount__c + Administrative_Fee__c ) - ( Loan_Amount__c - genesis__Balloon_Payment__c ) )
+
+/
+
+( ( Loan_Amount__c + new_Lending_Fees__c + Partial_Month_Interest__c + genesis__Balloon_Payment__c ) / 2 )
+
+)
+
+/
+
+( genesis__Term__c / 24 )
+
+)
+
+* 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(J41/J40)*(365/(J32-J27))
+= ((14-4)/(12+13)) * (365/(D(FPD)-D(LAD)))
+= ((12+13-4)/(12+13)) * (365/(D(FPD)-D(LAD)))
+= (1-(LA/TO)) * (365/(D(FPD)-D(LAD)))
+
+
+
+0.1708324275829226305120123579135
+
+
+C:\Users\Cloud Kaptan\Desktop\CK\Gitcode
+
+
+
